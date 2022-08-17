@@ -1,0 +1,12 @@
+{
+  "name": "imiji-interfaces",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git add . && git commit -m'tag version' && git tag v$PACKAGE_VERSION && git push --tags"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

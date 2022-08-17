@@ -1,0 +1,6 @@
+node_modules
+*.iml
+.env_*
+*.certs
+imiji-file-system
+how_create_certs_auth.txt
